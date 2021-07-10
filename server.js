@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-const db = require('./src/controllers/consultaControllers')
+const db = require('./Src/Data/Database')
 db.connect()
 
 //const receita = require('./src/routes/consultaRoutes.routes')
@@ -13,6 +13,6 @@ db.connect()
 
 
 
-app.listen(3333, ()=> console.log('Servidor rodando!'))
+app.listen(8080, ()=> console.log('Servidor rodando!'))
 
 

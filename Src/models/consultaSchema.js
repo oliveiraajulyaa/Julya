@@ -4,15 +4,15 @@ const consultaSchema = new mongoose.Schema ({
     _id: mongoose.Schema.Types.ObjectId , 
 
     nomeDoPaciente : {
-        Type: String,
+        type: String,
         required: true
     },
     dataDeNascimento : {
-        Type : Number,
+        type : Number,
         required: true
     },    
      endereço : {
-        Type: String,
+        type: String,
         required: true
     },
     queixa : {
@@ -27,4 +27,4 @@ const consultaSchema = new mongoose.Schema ({
     
 })
 
-module.exports = mongoose.model('consulta, consultaSchema')
+module.exports = mongoose.model('consulta', consultaSchema)
